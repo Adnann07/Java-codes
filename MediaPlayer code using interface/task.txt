@@ -1,0 +1,24 @@
+A Music Player is software which plays music files and adds files to a playlist. When used for
+playing songs, it prints a message: "Playing the File: F”, where F is the file name string. While
+adding a song to a list, it prints: "Adding File: F to the List: L”, where L is the list name string
+and F is the file name string.
+A Video Player is software which plays video files and adds subtitles to the video as well.
+When used for playing videos, it prints a message: "Playing the File: F”, where F is the file
+name string. While adding subtitles to a video, it prints: "Adding Subtitles: S.art to the File: F”,
+where S is the subtitle file name string and F is the file name string.
+A Media Player can record and change the speed of a media file (both audio and video) as
+well as offer all the functionalities of a Music Player and Video Player. While recording a file, it
+prints a message: "File: F, Recorded for D Seconds", where F is the file name string and D is
+the duration of time for which it has been recorded. While changing the speed, it prints a
+message: "Changing Speed of File: F to Speed: S”, where F is the file name string and S is the
+playback speed in double.
+GrooveMusic is a music software found in Windows OS that does all the things that a Music
+Player does.
+VLC is a media software which has all the features of a MediaPlayer. It also has an extra
+feature of streaming live videos. While streaming videos, it prints: "Streaming Video from
+Website: U”, where U is the website (URL) name string.
+Implement the whole scenario using abstract class/interface. For the methods’ implementation,
+just use System.out.println. Remember to pass F, L, U as String and D, S as double
+parameters in methods.
+Show a demo in the main function by instantiating an object of GrooveMusic and VLC
+individually and calling all their methods.
