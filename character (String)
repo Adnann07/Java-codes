@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class Username {
+    public String convertToUsername(String input) {
+        // Convert to lowercase
+        String lowerCaseInput = input.toLowerCase();
+        // Replace spaces with periods
+        String replacedInput = lowerCaseInput.replace(" ", ".");
+        // Reverse the order of the characters
+        String reversedInput = new StringBuilder(replacedInput).reverse().toString();
+        // Add a hash at the beginning
+        String output = "#" + reversedInput;
+        return output;
+    }
+}
+
+public class Instagram {
+    public static void main(String[] args) {
+        // Create an instance of the Username class
+        Username usernameConverter = new Username();
+        
+        // Take user input
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the name or company name: ");
+        String userInput = scanner.nextLine();
+        
+        // Call the convertToUsername method and print the result
+        String convertedUsername = usernameConverter.convertToUsername(userInput);
+        System.out.println("Converted Username: " + convertedUsername);
+    }
+}
