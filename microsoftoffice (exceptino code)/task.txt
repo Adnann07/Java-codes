@@ -1,0 +1,36 @@
+Create a project named MicrosoftOffice. Create two classes named Word and PowerPoint. Both classes will have a void method called Open() which takes a String as parameter.
+
+
+
+Create two custom exception classes: 1) NameNotApplicableException 2) NameNotValidException
+
+Both classes should override the constructor that takes a String parameter.
+
+
+
+Word can only open .doc/.docx files. It prints “Microsoft Word has opened FileName” when it is passed a file to open. Here FileName is the name of the file passed to the method of Word as a String. 
+
+If any other file except the ones it supports (.doc/.docx) is passed to the method, then it will throw NameNotApplicableException.
+
+
+
+PowerPoint can only open .ppt/.pps files. It prints “Microsoft PowerPoint has opened FileName” when it is passed a file to open. Here FileName is the name of the file passed to the method of PowerPoint as a String. 
+
+If any other file except the ones it supports (.ppt/.pps) is passed to the method, then it will throw NameNotValidException.
+
+
+
+Demonstrate the functionalities in the main function. In the main function, develop objects of both Word and PowerPoint and call the method Open() from both objects using a file name with extensions for each of the objects (You can pass these Strings: Online8.doc, Online8.ppt, Online8.xlsx, Online8.png)
+
+
+
+
+
+
+You can use the String method called endsWith() to check the extensions
+
+For example: 
+
+if(str.endsWith(".png")) {
+	System.out.println("The filename ends with .png");
+}
